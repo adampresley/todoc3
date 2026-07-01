@@ -118,17 +118,6 @@ fn void? Sqlite.exec(&self, String query, args...) {
    }
 
    sqlite3_finalize(stmt);
-
-   // if (sqlite3_exec(self.db, zQuery, null, null, &msg) != SQLITE_OK) {
-   //    if (msg) {
-   //       io::printfn("sqlite exec failed: %s", msg);
-   //       sqlite3_free(msg);
-   //    } else {
-   //       io::printfn("sqlite exec failed: %s", sqlite3_errmsg(self.db));
-   //    }
-   //
-   //    return EXEC_FAILED~;
-   // }
 }
 
 fn void? bindParam(Sqlite3* db, Sqlite3Stmt* stmt, CInt index, any arg) {
