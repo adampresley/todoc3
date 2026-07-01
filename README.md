@@ -16,6 +16,13 @@ interactive menu for:
 This is intentionally a small, practical project rather than a production todo
 system.
 
+### AI Disclaimer
+
+_I did not use AI to write the code for me_. I _did_, however, use OpenAI's Codex
+to help me learn the nuances of the C3 language where the documentation was sparse, 
+or if I had trouble understanding. My goal was to write something concrete using 
+the language so I could learn.
+
 ## Quickstart with Docker Compose
 
 From the repository root:
