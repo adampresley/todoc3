@@ -1,0 +1,15 @@
+services:
+  todoc3:
+    build:
+      context: .
+      args:
+        APP_PLATFORM: linux/amd64
+    image: todoc3:latest
+    platform: linux/amd64
+    stdin_open: true
+    tty: true
+    volumes:
+      - todoc3-data:/data
+
+volumes:
+  todoc3-data:
